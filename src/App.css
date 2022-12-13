@@ -44,7 +44,6 @@ background-color: hsl(0, 0%, 98%);
 }
 .features{
   display: flex;
-  flex-direction: column;
   cursor: pointer;
   
 
@@ -138,7 +137,4 @@ background-color: hsl(0, 0%, 98%);
   gap:2rem;
 }
 /* ================================Navbar drop-down================*/
-.menu-trigger img{
 
-
-}

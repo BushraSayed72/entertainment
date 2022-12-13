@@ -1,14 +1,16 @@
-import React from 'react';
+import React , {useState} from'react';
 import todo from '../images/icon-todo.svg';
 import calendar from '../images/icon-calendar.svg';
 import reminders from '../images/icon-reminders.svg';
 import planning from '../images/icon-planning.svg';
 
 const FeaturesList=()=>{
+
+  
   return (
    
-            
-            <>
+    
+            <div >
                 <ul className='dropdown-menu' >
                     <li>
                     <img src={todo} alt=''/>
@@ -30,7 +32,8 @@ const FeaturesList=()=>{
                     <span>Planning</span>
                     </li>
                 </ul>
-            </>
+
+            </div>
 
         
 
