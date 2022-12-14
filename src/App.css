@@ -62,12 +62,14 @@ background-color: hsl(0, 0%, 98%);
   
 }
 .features .active{
+  position: absolute;
   opacity:1;
   visibility: visible;
   transform: translate(0);
   transition: var(--speed) ease;
 }
 .features .inactive{
+  position:absolute;
   opacity:0;
   visibility: hidden;
   transform: translateY(-20px);

@@ -4,13 +4,13 @@ import calendar from '../images/icon-calendar.svg';
 import reminders from '../images/icon-reminders.svg';
 import planning from '../images/icon-planning.svg';
 
-const FeaturesList=()=>{
+const FeaturesList=({click})=>{
 
   
   return (
    
     
-            <div >
+            <div className={click? 'active':'inactive'}>
                 <ul className='dropdown-menu' >
                     <li>
                     <img src={todo} alt=''/>

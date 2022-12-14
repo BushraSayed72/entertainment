@@ -10,8 +10,8 @@ import CompanyList from './CompanyList.js';
 
 function Navbar() {
 
-  // const [click, setClick]= useState(false); 
   const [click, setClick]= useState (false);
+  const [open, setOpen]= useState (false);
   return (
     <div className='navbar'>
     <div className='left-div'>
@@ -23,16 +23,18 @@ function Navbar() {
         {click? <img src={down}  />: <img src ={up}/> }
         </div>
         <FeaturesList 
-            className={click? 'active':'inactive'}/>
+          click={click}/>
          
          </div> 
         <div className='features'>
         <li>Company </li>
-        <div className='menu-icon' >
-        {click? <img src={down}  />: <img src ={up}/> }
+        <div className='menu-icon' onClick={()=>{setOpen(!open)}} >
+        {open? <img src={down}  />: <img src ={up}/> }
         </div>
          
-        <CompanyList/>
+        <CompanyList 
+          open={open}
+        />
         </div>
         
         <li>Careers</li>
