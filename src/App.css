@@ -110,7 +110,7 @@ background-color: hsl(0, 0%, 98%);
   font-weight: 900;
 }
 .main_para{
-  
+  font-weight: 700;
   font-size: 18px;}
 .heading{
   font-size: 7rem;
@@ -185,14 +185,13 @@ padding-left: 2rem;
 }
 .nav-menu{
   padding-top: 40px;
-  display: flex ; 
-  flex-direction: column !important;
+
   align-items: center;
   text-align: center;
   position: absolute;
   top:80px;
   left:-100%;
-  width: 100%;
+  width: 90%;
   height:90vh;
   background-color: rgb(177, 229, 212);
   transition: all 0.5s ease;
@@ -201,11 +200,32 @@ padding-left: 2rem;
 .nav-menu.active{
  display: flex;
  flex-direction: column !important;
-  background:#eae9e5;
-  left: 0;
+  background:white;
+  left:0;
   transition: all 0.5s ease;
   z-index: 1;
   
+}
+.left-div ul{
+  padding-left:0;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:2rem;
+  font-size: 2rem;
+  background-color: white;
+
+  
+
+}
+.dropdown-menu{
+  position:absolute;
+ 
+  
+}
+.left-div{
+  display: flex;
+  align-items: flex-start;
 }
 .menuu-icon {
   display: block;
@@ -216,6 +236,39 @@ padding-left: 2rem;
   font-size: 1.8rem;
   cursor: pointer;
 }
+.features .active{
+  position:relative;
+  
+}
+.nav-list{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 2rem;
+}
+.right-div button{
+  margin-left: 30px;
+  height:50px;
+  width:200px ;
+  font-size: 1.5rem;
+}
+.main{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  padding: 4rem;
+}
+.hero_img{
+  width: 100vh;
+}
+.main button{
+  width: 250px;
+  height:50px; 
+  margin-left:10rem;
+  font-size: 1.5rem;
 
+}
 }
 

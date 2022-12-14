@@ -15,11 +15,13 @@ function Navbar() {
   const [dropDownMobile, setDropDownMobile]=useState (false);
   return (
     <div className='navbar'>
-     <div className='left-div'>
     <img src={snap} alt='snap'/>
+     <div className={dropDownMobile? 'nav-menu active': 'nav-menu'} >
+     <div className='left-div'>
+    
 
 
-    <div className={dropDownMobile? 'nav-menu active': 'nav-menu'}>
+    {/* <div className={dropDownMobile? 'nav-menu active': 'nav-menu'} > */}
    
     <ul className= 'nav-list'>
         <div className='features' >
@@ -49,7 +51,7 @@ function Navbar() {
     </ul>
     
     </div>
-    </div>
+   
     <div className='right-div'>
     <ul className='nav-list'>
         <li className='nav-item' onClick={closeMobileMenu}>Login</li>
@@ -59,7 +61,7 @@ function Navbar() {
         </ul>
         
     </div>
-
+    </div>
       
       
     <div className='menuu-icon' onClick={handleClick}> {dropDownMobile? <FaCompressArrowsAlt/>:<FaListUl/>  }</div>  
