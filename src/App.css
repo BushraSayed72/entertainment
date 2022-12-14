@@ -7,10 +7,19 @@ background-color: hsl(0, 0%, 98%);
 .navbar{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
   color:hsl(0, 0%, 41%);
   padding: 2rem;
 
+}
+.nav-menu{
+  padding-left:2rem;
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+}
+.menuu-icon{
+  display:none;
 }
 .left-div {
   display:flex;
@@ -46,6 +55,9 @@ background-color: hsl(0, 0%, 98%);
   border-color:grey;
   cursor: pointer;
 
+}
+.menu-icon{
+  padding-left: 10px;
 }
 .features{
   display: flex;
